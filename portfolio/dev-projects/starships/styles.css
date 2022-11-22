@@ -1,0 +1,91 @@
+/*@import "compass/css3";*/
+/*  @import url(https://allfont.net/allfont.css?fonts=star-jedi);*/
+:root {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    font-family: 'Poller One', cursive;
+    font-size: 1rem;
+}
+
+h1{
+    margin-left: 2rem;
+    margin-bottom:0;
+    color:white;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.shipView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.laser-beam {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 500%;
+  background: rgba(99,195,231,0.6);
+  -webkit-box-shadow: 0px 0px 15px 0px #63c3e7);
+  -moz-box-shadow: 0px 0px 15px 0px #63c3e7;
+  box-shadow: 0px 0px 15px 0px #63c3e7;
+  -webkit-transform-origin: 0 100%;
+  -webkit-animation: laser 8s infinite;
+}
+  .laser-beam.red {
+      position: absolute;
+  left: 100%;
+  bottom: 0;
+  width: 10px;
+  height: 500%;
+    -webkit-animation: laser 8s infinite;
+    background: rgba(236,19,65,0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px #ec1341;
+    -moz-box-shadow: 0px 0px 15px 0px #ec1341;
+    box-shadow: 0px 0px 15px 0px #ec1341;
+  }
+@-webkit-keyframes laser {
+  0% {
+    -moz-transform: rotate(-75deg);
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+  }
+  50% {
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -webkit-transform: rotate(75deg);
+    transform: rotate(75deg);
+  }
+  100% {
+    -moz-transform: rotate(-75deg);
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+  }
+}
+nav {
+    width: 600px;
+}
+
+img, nav {
+    position: relative;
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}

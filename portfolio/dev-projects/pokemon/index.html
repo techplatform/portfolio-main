@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="pokestyles.css" rel="stylesheet"/>
+    <title>Pokemon Go!</title>
+</head>
+<body>
+    <header class="items">
+        <h1 class="title">Pokemon! Collect them all!</h1>
+        <button class="loadPokemon">Load Pokemon</button>
+        <button id="fetchSelectedPokemon">Fetch Selected Pokemon</button>
+        <button id="newPokemon">New Pokemon</button>
+    </header>
+    <main>
+        <div class= "pokeGrid"></div>
+    </main>
+   <!-- <div class = "modal"> <!-- dont forget "is-active" for it to work 
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <form class="box">
+              <div class="field">
+                <label class="label">Enter the ID of the Pokemon you want to fetch:</label>
+                <div class="control">
+                  <input class="input" type="number" placeholder="e.g. 1 for Bulbasaur">
+                </div>
+              </div>
+              <button id="submitButton" class="button is-primary">Submit</button>
+            </form>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div> -->
+    <script src="pokecode.js" type="module"></script>
+</body>
+</html>
